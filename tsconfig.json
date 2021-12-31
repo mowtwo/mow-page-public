@@ -1,0 +1,22 @@
+{
+  "extends": "@tsconfig/svelte/tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": "./",
+    "module": "ES2020",
+    "target": "ES6",
+    "esModuleInterop": true,
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    }
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules/*",
+    "__sapper__/*",
+    "public/*"
+  ]
+}
